@@ -1,10 +1,10 @@
 
 require.config({
     paths:{
-        "jquery":"./jquery/dist/jquery.min"
+        "jquery":"../lib/jquery/dist/jquery.min"
     }
 });
-require(["jquery",'app'], function($,app){
+require(["jquery",'app'], function($, app){
 
     $(".gallery").click(function(){
         var curentTarget = event.target.parentNode;
