@@ -1,0 +1,1 @@
+define(["data","jquery"],function(e,l){for(var m=0;m<myArr.length;m++){var r,a=localStorage,i=a.getItem(myArr[m].id);r=null==i?0:i,$liElem=l("<li/>",{id:myArr[m].id,"class":"item"}),$imgElem=l("<img/>",{src:"./images/"+myArr[m].image}),$spanElem=l("<span/>",{"class":"counter",text:Number(r)}),$liElem.append($imgElem,$spanElem),l(".gallery").append($liElem)}});
